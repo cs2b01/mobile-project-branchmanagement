@@ -37,12 +37,6 @@ import java.util.Map;
 public class RestaurantsActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager layoutManager;
-
-
-    public void showMessage(String message) {
-        Toast.makeText(this, message, Toast.LENGTH_LONG).show();
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -37,12 +37,6 @@ import java.util.Map;
 public class EmployeeActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager layoutManager;
-
-
-    public void showMessage(String message) {
-        Toast.makeText(this, message, Toast.LENGTH_LONG).show();
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,9 +54,6 @@ public class EmployeeActivity extends AppCompatActivity {
         getEmployees();
     }
 
-    public Activity getActivity(){
-        return this;
-    }
 
     public void getEmployees(){
         String url = "http://plataformas.herokuapp.com/employees/"+getIntent().getExtras().get("id").toString();
