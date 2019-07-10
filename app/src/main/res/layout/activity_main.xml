@@ -7,11 +7,11 @@
     tools:context=".MainActivity">
 
 
-
     <LinearLayout
+        android:id="@+id/loginLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/loginLayout"
+        android:background="@drawable/images"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -24,16 +24,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="#FFFFFF"
                 android:text="Restaurant Branch Manager"
                 android:textColor="@android:color/black"
-                android:textSize="24dp"/>
+                android:textSize="24dp" />
 
             <TextView
+                android:id="@+id/invalid"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=""
-                android:id="@+id/invalid"
-                android:textColor="@android:color/holo_red_dark"/>
+                android:textColor="@android:color/holo_red_dark" />
 
         </LinearLayout>
 
@@ -41,48 +42,53 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#BFFFFFFF"
             android:gravity="center">
 
             <TextView
                 android:id="@+id/lblUsername"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Username"/>
+                android:text="Username" />
+
             <EditText
                 android:id="@+id/txtUsername"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="10"/>
+                android:ems="10" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#BFFFFFFF"
             android:gravity="center">
+
             <TextView
                 android:id="@+id/lblPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Password"/>
+                android:text="Password" />
+
             <EditText
                 android:id="@+id/txtPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPassword"/>
+                android:inputType="textPassword" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center">
+
             <Button
                 android:id="@+id/btnLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Login"
                 android:onClick="onBtnLoginClicked"
-                />
+                android:text="Login" />
 
         </LinearLayout>
 
