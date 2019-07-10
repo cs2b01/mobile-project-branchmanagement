@@ -37,7 +37,6 @@ import java.util.Map;
 public class MenuActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager layoutManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,14 +51,10 @@ public class MenuActivity extends AppCompatActivity {
     protected void onResume(){
         super.onResume();
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        getRestaurants();
+        getMenu();
     }
 
-    public Activity getActivity(){
-        return this;
-    }
-
-    public void getRestaurants(){
+    public void getMenu(){
         String url = "http://plataformas.herokuapp.com/plates/"+getIntent().getExtras().get("id").toString();
         RequestQueue queue = Volley.newRequestQueue(this);
         Map<String, String> params = new HashMap();
