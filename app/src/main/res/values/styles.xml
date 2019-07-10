@@ -9,4 +9,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="myButton" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="colorButtonNormal">#e56868</item>
+    </style>
+
+
 </resources>

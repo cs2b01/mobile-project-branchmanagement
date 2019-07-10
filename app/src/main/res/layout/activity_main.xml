@@ -11,9 +11,11 @@
         android:id="@+id/loginLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/images"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:elevation="1dp">
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,7 +29,8 @@
                 android:background="#BFFFFFFF"
                 android:text="Restaurant Branch Manager"
                 android:textColor="@android:color/black"
-                android:textSize="24dp" />
+                android:textSize="24dp"
+                android:padding="6dp"/>
 
             <TextView
                 android:id="@+id/invalid"
@@ -95,6 +98,13 @@
         </LinearLayout>
 
 
+
     </LinearLayout>
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:src="@drawable/bg"
+        android:elevation="0dp"/>
 </android.support.constraint.ConstraintLayout>
