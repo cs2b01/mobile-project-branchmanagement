@@ -1,4 +1,4 @@
-package cs2901.utec.chat_mobile;
+package com.example.android.restaurantmanagement;
 
 import org.junit.Test;
 

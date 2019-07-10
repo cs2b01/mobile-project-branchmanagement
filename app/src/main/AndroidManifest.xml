@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="cs2901.utec.chat_mobile">
+    package="com.example.android.restaurantmanagement">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,9 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Contacts"></activity>
-        <activity android:name=".Chat"></activity>
-        <activity android:name=".LoginActivity">
+        <activity android:name=".RestaurantsActivity"></activity>
+        <activity android:name=".MenuActivity"></activity>
+        <activity android:name=".EmployeeActivity"></activity>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

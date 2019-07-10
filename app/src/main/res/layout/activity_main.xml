@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".MainActivity">
 
 
 
@@ -24,12 +24,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CSB01 CHAT"/>
+                android:text="Restaurant Branch Manager"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="201810734 - Alejandro Goicochea"/>
+                android:text=""
+                android:id="@+id/invalid"
+                android:textColor="@android:color/holo_red_dark"/>
 
         </LinearLayout>
 

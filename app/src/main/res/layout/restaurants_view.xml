@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/element_view_container"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    >
+
+    <TextView
+        android:id="@+id/restaurant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restaurant name placeholder"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_menu"
+        android:textSize="12sp"
+        android:text="Menu"
+        android:layout_alignParentRight="true"
+/>
+
+
+    <Button
+        android:id="@+id/button_employee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employees"
+        android:textSize="12sp"
+        android:layout_toLeftOf="@id/button_menu"/>
+
+
+</RelativeLayout>

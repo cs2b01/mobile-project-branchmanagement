@@ -1,4 +1,4 @@
-package cs2901.utec.chat_mobile;
+package com.example.android.restaurantmanagement;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("cs2901.utec.chat_mobile", appContext.getPackageName());
+        assertEquals("com.example.android.restaurantmanagement", appContext.getPackageName());
     }
 }
